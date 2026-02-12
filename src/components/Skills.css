@@ -1,0 +1,122 @@
+.skills-table {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.skill-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #e5e5e5;
+  transition: background 0.3s ease;
+  animation: pop 0.25s ease forwards;
+  opacity: 0;
+}
+
+.dot.filled {
+  background: var(--accent);
+}
+
+@keyframes pop {
+  from { transform: scale(0.4); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+/* Títulos dentro de Skills */
+.skills-title {
+  font-size: 2rem;
+  margin: 50px 0 20px;   /* ← Añadimos margen arriba */
+  color: var(--accent);
+  text-align: center;
+  width: 100%;
+}
+
+/* Evitar que chips aparezcan en una sola línea */
+.chip-container {
+  display: flex;
+  flex-wrap: wrap;   /* ← ¡IMPORTANTE! asegure que los chips salten de línea */
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 40px;  /* ← margen entre secciones */
+}
+
+/* Chips */
+.chip {
+  background: var(--card);
+  padding: 10px 18px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-size: 1rem;
+}
+
+/* Contenedor general */
+.bars-container {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Fila de cada habilidad */
+.bar-row {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etiquetas */
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.bar-label .level {
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+/* Barra */
+.bar {
+  height: 12px;
+  width: 100%;
+  background: #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 8px;
+  transition: width 1.2s ease;
+}
+
+/* Porcentaje */
+.percent {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: right;
+  opacity: 0.7;
+}

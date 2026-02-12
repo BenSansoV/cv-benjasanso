@@ -1,0 +1,172 @@
+/* src/components/Portfolio.css */
+
+.portfolio-section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.portfolio-header {
+  margin-bottom: 2px;
+}
+
+.portfolio-title {
+  font-size: 2.3rem;          /* igual que contacto */
+  margin-bottom: 40px;        /* mismo espaciado */
+  color: var(--accent);       /* mismo azul */
+  text-align: center;         /* opcional pero recomendado */
+}
+
+.portfolio-intro {
+  margin: 0;
+  opacity: 0.8;
+  line-height: 1.5;
+  max-width: 780px;
+}
+
+/* Modern DE grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.project-card {
+  grid-column: span 12;
+  border-radius: 16px;
+  padding: 18px 18px 16px 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.project-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* 👈 centrado */
+  margin-bottom: 18px;
+}
+
+.project-pill {
+  font-size: 1.8rem;      /* más grande */
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 6px 0;
+  letter-spacing: 0.5px;
+}
+
+.project-status {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.project-title {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.project-summary {
+  margin: 0 0 12px 0;
+  opacity: 0.85;
+  line-height: 1.45;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  opacity: 0.9;
+}
+
+.project-highlights {
+  margin: 0 0 14px 18px;
+  padding: 0;
+  opacity: 0.85;
+  line-height: 1.5;
+}
+
+.project-cta {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;     /* 👈 vertical */
+  gap: 10px;
+  align-items: flex-end;      /* alineados a la derecha */
+}
+
+
+.cta-link {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
+}
+
+
+.cta-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.cta-disabled {
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .project-card {
+    grid-column: span 12;
+  }
+}
+
+.cta-btn {
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.cta-btn:hover {
+  text-decoration: underline;
+}
+.project-image-wrap {
+  margin: 14px 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  background: white;
+  opacity: 0.97;          /* 👈 baja un poco el brillo */
+}
+
+
+

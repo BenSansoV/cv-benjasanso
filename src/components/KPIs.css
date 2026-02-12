@@ -1,0 +1,28 @@
+.kpi-section {
+  margin-top: 50px;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.kpi-card {
+  background: var(--card);
+  padding: 30px 40px;
+  border-radius: 18px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.kpi-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.kpi-label {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}

@@ -1,0 +1,132 @@
+.pm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 16px 40px 16px;
+  z-index: 999;
+}
+
+.pm-modal {
+  width: min(980px, 100%);
+  border-radius: 18px;
+  background: rgba(15, 18, 26, 0.96);
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 20px 70px rgba(0,0,0,0.45);
+  padding: 18px 18px 10px 18px;
+}
+
+.pm-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.pm-pill {
+  display: inline-block;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  margin-bottom: 10px;
+}
+
+.pm-title {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+}
+
+.pm-summary {
+  margin: 0;
+  opacity: 0.82;
+  line-height: 1.5;
+}
+
+.pm-close {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.pm-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 10px 0;
+}
+
+.pm-tag {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.18);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.pm-body {
+  margin-top: 10px;
+  padding-bottom: 8px;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.pm-section {
+  padding: 12px 6px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.pm-h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  opacity: 0.95;
+}
+
+.pm-p {
+  margin: 0;
+  opacity: 0.82;
+  line-height: 1.6;
+}
+
+.pm-list {
+  margin: 0;
+  padding-left: 18px;
+  opacity: 0.88;
+  line-height: 1.65;
+}
+
+.pm-list li {
+  margin: 6px 0;
+}
+
+/* Scrollbar oscuro para el modal */
+.pm-body {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(255,255,255,0.25) transparent;
+}
+
+/* Chrome / Edge / Safari */
+.pm-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pm-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pm-body::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.18);
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.pm-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.28);
+}

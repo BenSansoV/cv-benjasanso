@@ -1,0 +1,67 @@
+:root {
+  --bg: #0b0f17;          /* fondo principal */
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.72);
+
+  --card: rgba(255,255,255,0.04);
+  --border: rgba(255,255,255,0.10);
+
+  --accent: #60a5fa;      /* azul suave moderno */
+  --accent2: #22c55e;     /* opcional: verde para highlights */
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Quita estilos heredados de Vite */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Responsive Global */
+@media (max-width: 768px) {
+  .hero-card {
+    padding: 60px 20px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem !important;
+  }
+
+  .kpi-section {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.9rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem !important;
+  }
+}
+
+html {
+  scroll-padding-top: 100px; /* Ajusta según la altura real del navbar */
+}
