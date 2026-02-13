@@ -18,7 +18,7 @@ export default function ProjectModal({ open, onClose, project }) {
           <div>
             <div className="pm-pill">{project.pillar}</div>
             <h2 className="pm-title">{project.title}</h2>
-            <p className="pm-summary">{project.summary}</p>
+            <p className="pm-summary">{project.modalIntro||project.summary}</p>
           </div>
 
           <button className="pm-close" onClick={onClose} aria-label="Cerrar">
@@ -31,6 +31,17 @@ export default function ProjectModal({ open, onClose, project }) {
             <span key={i} className="pm-tag">{t}</span>
           ))}
         </div>
+
+        {project.gallery?.length > 0 && (
+          <div className="pm-gallery">
+            {project.gallery.map((img, i) => (
+              <figure key={i} className="pm-figure">
+                <img src={img.src} alt={img.alt} className="pm-img" loading="lazy" />
+                <figcaption className="pm-cap">{img.alt}</figcaption>
+              </figure>
+            ))}
+          </div>
+        )}
 
         {cs && (
           <div className="pm-body">

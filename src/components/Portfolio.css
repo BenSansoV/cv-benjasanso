@@ -110,7 +110,6 @@
   align-items: flex-end;      /* alineados a la derecha */
 }
 
-
 .cta-link {
   color: var(--accent);
   font-weight: 700;
@@ -120,7 +119,6 @@
 .cta-link:hover {
   text-decoration: underline;
 }
-
 
 .cta-link:hover {
   opacity: 1;
@@ -168,5 +166,116 @@
   opacity: 0.97;          /* 👈 baja un poco el brillo */
 }
 
+.portfolio-linear {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
 
+.project-block {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 26px;
+}
 
+.project-head {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.project-case {
+  margin-top: 20px;
+  display: grid;
+  gap: 18px;
+}
+
+.project-section {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.project-h4 {
+  margin: 0 0 10px 0;
+  color: var(--accent);
+}
+
+.project-p {
+  margin: 0;
+  white-space: pre-line;
+  opacity: 0.9;
+}
+
+.project-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.project-gallery {
+  margin-top: 22px;
+  display: grid;
+  gap: 14px;
+}
+
+.project-figure {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+}
+
+.project-gallery-img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.project-cap {
+  padding: 10px 12px;
+  font-size: 12px;
+  opacity: 0.75;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.project-divider {
+  margin-top: 26px;
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+}
+
+.project-steps{
+  margin-top: 22px;
+  display: grid;
+  gap: 14px;
+}
+
+.step-text{
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+
+.step-title{
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+.step-p{
+  margin: 0;
+  white-space: pre-line;
+  opacity: 0.9;
+}
+
+.project-step-image {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 12px;
+  margin: 24px auto;
+  display: block;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}

@@ -130,3 +130,30 @@
 .pm-body::-webkit-scrollbar-thumb:hover {
   background: rgba(255,255,255,0.28);
 }
+
+.pm-gallery{
+  margin-top: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.pm-figure{
+  margin: 0;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.pm-img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pm-cap{
+  font-size: 12px;
+  opacity: 0.75;
+  padding: 10px 12px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
